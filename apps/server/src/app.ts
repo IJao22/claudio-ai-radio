@@ -72,7 +72,12 @@ export async function buildApp() {
   const ttsManager = new TtsManager();
   const musicImporter = new MusicImporter();
 
-  await musicImporter.reimportLegacyQqPlaylists();
+  void musicImporter.reimportLegacyQqPlaylists().catch((error) => {
+    console.warn(
+      "Skipping startup QQ playlist reimport because the background refresh failed.",
+      error instanceof Error ? error.message : error
+    );
+  });
 
   await app.register(cors, {
     origin: resolveCorsOrigin()

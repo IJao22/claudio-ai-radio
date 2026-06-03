@@ -6,10 +6,6 @@ services:
     startCommand: npm run start:prod
     healthCheckPath: /health
     autoDeploy: true
-    disk:
-      name: claudio-data
-      mountPath: /opt/render/project/src/render-data
-      sizeGB: 5
     envVars:
       - key: NODE_ENV
         value: production

@@ -55,7 +55,7 @@ Important environment variables:
 
 - `PORT`
 - `CLAUDIO_APP_SHELL=browser`
-- `CLAUDIO_DATA_DIR=/absolute/path/to/persistent-data`
+- `CLAUDIO_DATA_DIR=/absolute/path/to/data-dir`
 - `OPENAI_API_KEY`
 - `LLM_MODE`
 - `TTS_PROVIDER`
@@ -66,8 +66,7 @@ There is a ready-to-use [render.yaml](C:/Users/20208/Documents/VIBE%20CODING%20I
 
 It deploys:
 
-- one Node web service
-- one persistent disk mounted at `/opt/render/project/src/render-data`
+- one free Node web service
 
 Render build/start:
 
@@ -78,22 +77,18 @@ Required notes:
 
 - you must deploy from a Git repository
 - `OPENAI_API_KEY` must be filled in Render if you want DeepSeek / OpenAI-compatible mode
-- platform cookies, imported playlists, corpus edits, memory state, and uploaded voices will persist in the mounted disk
+- on Render free instances, local files are ephemeral and can be reset on restart or redeploy
+- that means platform cookies, imported playlists, corpus edits, memory state, and uploaded voices are not guaranteed to persist online
 
-## Current deployment blockers
+## Current deployment status
 
-This workspace is deployment-ready, but not yet publicly released from this machine because:
+This workspace is now pushed to GitHub and prepared for Render deployment.
 
-- there is no `.git` repository in the workspace root
-- there is no Git remote configured
-- `render` CLI is not installed here
-- `gh` CLI is not installed here
+Remaining work:
 
-So the code has been prepared for cloud deployment, but the final publish step still requires:
-
-1. initializing or reconnecting Git in this folder
-2. pushing to GitHub / GitLab / Bitbucket
-3. creating the Render service from that repo
+1. create the Render service from the GitHub repository
+2. fill cloud environment variables such as `OPENAI_API_KEY`
+3. verify production playback behavior with online credentials
 
 ## Current scope
 

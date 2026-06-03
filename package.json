@@ -1,0 +1,30 @@
+{
+  "name": "claudio-ai-radio",
+  "private": true,
+  "version": "0.1.0",
+  "main": "apps/desktop/main.mjs",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./scripts/start-dev-stack.ps1",
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:web": "npm run dev -w @claudio/web",
+    "dev:server": "npm run dev -w @claudio/server",
+    "build:web": "npm run build -w @claudio/web",
+    "build:web:desktop": "cross-env VITE_BASE_PATH=./ npm run build -w @claudio/web",
+    "build": "npm run build -w @claudio/core && npm run build -w @claudio/server && npm run build:web",
+    "start:prod": "node apps/server/dist/index.js",
+    "desktop:prepare": "node scripts/prepare-desktop-bundle.mjs",
+    "desktop:dev": "electron .",
+    "desktop:build": "npm run build -w @claudio/core && npm run build -w @claudio/server && npm run build:web:desktop && npm run desktop:prepare && electron-builder --config apps/desktop/electron-builder.mjs --dir",
+    "desktop:dist": "npm run build -w @claudio/core && npm run build -w @claudio/server && npm run build:web:desktop && npm run desktop:prepare && electron-builder --config apps/desktop/electron-builder.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "cross-env": "^10.0.0",
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  }
+}

@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: claudio-ai-radio
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /health
+    autoDeploy: true
+    disk:
+      name: claudio-data
+      mountPath: /opt/render/project/src/render-data
+      sizeGB: 5
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLAUDIO_APP_SHELL
+        value: browser
+      - key: CLAUDIO_DATA_DIR
+        value: /opt/render/project/src/render-data
+      - key: CORS_ORIGIN
+        value: ""
+      - key: TTS_PROVIDER
+        value: edge
+      - key: TTS_FALLBACK_TO_WEB_SPEECH
+        value: "true"
+      - key: CLAUDIO_EDGE_TTS_VOICE
+        value: zh-CN-XiaoxiaoNeural
+      - key: LLM_MODE
+        value: rule
+      - key: OPENAI_BASE_URL
+        value: https://api.deepseek.com
+      - key: OPENAI_MODEL
+        value: deepseek-chat
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: LLM_FALLBACK_TO_RULE
+        value: "true"

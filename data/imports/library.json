@@ -1,0 +1,83 @@
+{
+  "updatedAt": "2026-05-31T13:01:21.217Z",
+  "latestPlaylistId": "qq-9720520510",
+  "playlists": [
+    {
+      "key": "qq-9720520510",
+      "source": "qq",
+      "id": "9720520510",
+      "title": "新建歌单",
+      "creator": "戳",
+      "trackCount": 827,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001IfyA81ZYW9Q.jpg",
+      "canonicalUrl": "https://y.qq.com/n/ryqq_v2/playlist/9720520510",
+      "importedAt": "2026-05-31T13:01:21.217Z"
+    },
+    {
+      "key": "qq-9421543724",
+      "source": "qq",
+      "id": "9421543724",
+      "title": "最爱",
+      "creator": "戳",
+      "trackCount": 11,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003Ow85E3pnoqi.jpg",
+      "canonicalUrl": "https://y.qq.com/n/ryqq_v2/playlist/9421543724",
+      "importedAt": "2026-05-31T13:01:20.935Z"
+    },
+    {
+      "key": "qq-9636408014",
+      "source": "qq",
+      "id": "9636408014",
+      "title": "戳的2025年度音乐歌单",
+      "creator": "戳",
+      "trackCount": 50,
+      "coverUrl": "https://y.qq.com/music/common/upload/t_cm3_photo_publish/7214660.png?max_age=31536000",
+      "canonicalUrl": "https://y.qq.com/n/ryqq_v2/playlist/9636408014",
+      "importedAt": "2026-05-31T13:01:20.873Z"
+    },
+    {
+      "key": "netease-8995691542",
+      "source": "netease",
+      "id": "8995691542",
+      "title": "IJao22的2023年度歌单",
+      "creator": "IJao22",
+      "trackCount": 10,
+      "coverUrl": "https://p1.music.126.net/-UEqoOLy2P4dWzH3WrBlbA==/109951167164989067.jpg",
+      "canonicalUrl": "https://music.163.com/playlist?id=8995691542",
+      "importedAt": "2026-05-31T13:01:20.618Z"
+    },
+    {
+      "key": "netease-13074870257",
+      "source": "netease",
+      "id": "13074870257",
+      "title": "IJao22的2024年度歌单",
+      "creator": "IJao22",
+      "trackCount": 10,
+      "coverUrl": "https://p1.music.126.net/vHgX5LPws_TSNzjeTGt_sQ==/109951163087231653.jpg",
+      "canonicalUrl": "https://music.163.com/playlist?id=13074870257",
+      "importedAt": "2026-05-31T13:01:20.458Z"
+    },
+    {
+      "key": "netease-17605206877",
+      "source": "netease",
+      "id": "17605206877",
+      "title": "IJao22的2025年度歌单",
+      "creator": "IJao22",
+      "trackCount": 10,
+      "coverUrl": "https://p1.music.126.net/zNdiECjTFkKoZIObqDqzWQ==/109951168870199828.jpg",
+      "canonicalUrl": "https://music.163.com/playlist?id=17605206877",
+      "importedAt": "2026-05-31T13:01:20.363Z"
+    },
+    {
+      "key": "netease-4893754214",
+      "source": "netease",
+      "id": "4893754214",
+      "title": "IJao22喜欢的音乐",
+      "creator": "IJao22",
+      "trackCount": 1776,
+      "coverUrl": "https://p1.music.126.net/9lapjXaXrFkTk1B_ZrR7Fw==/109951169645844095.jpg",
+      "canonicalUrl": "https://music.163.com/playlist?id=4893754214",
+      "importedAt": "2026-05-31T13:01:20.241Z"
+    }
+  ]
+}

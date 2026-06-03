@@ -1,0 +1,132 @@
+{
+  "source": "qq",
+  "id": "9421543724",
+  "title": "最爱",
+  "creator": "戳",
+  "trackCount": 11,
+  "playCount": 431,
+  "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003Ow85E3pnoqi.jpg",
+  "canonicalUrl": "https://y.qq.com/n/ryqq_v2/playlist/9421543724",
+  "tracks": [
+    {
+      "id": "3586263",
+      "title": "爱你没差",
+      "artist": "周杰伦",
+      "album": "十二新作",
+      "durationMs": 280000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003Ow85E3pnoqi.jpg",
+      "songId": "3586263",
+      "songMid": "002tNzue0g8xQA",
+      "albumMid": "003Ow85E3pnoqi"
+    },
+    {
+      "id": "97762",
+      "title": "暗号",
+      "artist": "周杰伦",
+      "album": "八度空间",
+      "durationMs": 271000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000004MGitN0zEHpb.jpg",
+      "songId": "97762",
+      "songMid": "000NQDjk4BA0W3",
+      "albumMid": "004MGitN0zEHpb"
+    },
+    {
+      "id": "4907899",
+      "title": "信心花舍",
+      "artist": "陈奕迅",
+      "album": "Shall We Dance? Shall We Talk!",
+      "durationMs": 205000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000004S8YQr3UmEbG.jpg",
+      "songId": "4907899",
+      "songMid": "002pyncY30NP54",
+      "albumMid": "004S8YQr3UmEbG"
+    },
+    {
+      "id": "203443305",
+      "title": "谁来剪月光",
+      "artist": "陈奕迅",
+      "album": "海胆 & 谁来剪月光",
+      "durationMs": 212000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000002R02Wk19WXlG.jpg",
+      "songId": "203443305",
+      "songMid": "0015TaBO28a8co",
+      "albumMid": "002R02Wk19WXlG"
+    },
+    {
+      "id": "5293864",
+      "title": "天气先生",
+      "artist": "方大同",
+      "album": "危险世界",
+      "durationMs": 271000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000000GvdTR0qcKh8.jpg",
+      "songId": "5293864",
+      "songMid": "000DaLuY4KKShq",
+      "albumMid": "000GvdTR0qcKh8"
+    },
+    {
+      "id": "361947424",
+      "title": "红颜如霜",
+      "artist": "周杰伦",
+      "album": "最伟大的作品",
+      "durationMs": 257000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M0000042cH172YJ0mz.jpg",
+      "songId": "361947424",
+      "songMid": "001KhHrT4Mv4pd",
+      "albumMid": "0042cH172YJ0mz"
+    },
+    {
+      "id": "244143411",
+      "title": "有我呢",
+      "artist": "郭一凡",
+      "album": "重返地球",
+      "durationMs": 274000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001DViXn26rVwz.jpg",
+      "songId": "244143411",
+      "songMid": "0002N65N3iBcJK",
+      "albumMid": "001DViXn26rVwz"
+    },
+    {
+      "id": "7220005",
+      "title": "Love Song (Live)",
+      "artist": "方大同",
+      "album": "15 Khalil Fong Live in Hong Kong 2011",
+      "durationMs": 357000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001wrP0X1wnbIo.jpg",
+      "songId": "7220005",
+      "songMid": "004LlGlM3C1bN9",
+      "albumMid": "001wrP0X1wnbIo"
+    },
+    {
+      "id": "492069014",
+      "title": "黑夜问白天 (Live)",
+      "artist": "林俊杰, 胡彦斌",
+      "album": "",
+      "durationMs": 271000,
+      "songId": "492069014",
+      "songMid": "001BU61V1hYsEw",
+      "albumMid": ""
+    },
+    {
+      "id": "102065753",
+      "title": "园游会",
+      "artist": "周杰伦",
+      "album": "七里香",
+      "durationMs": 255000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003DFRzD192KKD.jpg",
+      "songId": "102065753",
+      "songMid": "003nEQHr3Ceet5",
+      "albumMid": "003DFRzD192KKD"
+    },
+    {
+      "id": "101787870",
+      "title": "手写的从前",
+      "artist": "周杰伦",
+      "album": "哎呦，不错哦",
+      "durationMs": 297000,
+      "coverUrl": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001uqejs3d6EID.jpg",
+      "songId": "101787870",
+      "songMid": "002u8ZOM4C7QF4",
+      "albumMid": "001uqejs3d6EID"
+    }
+  ]
+}

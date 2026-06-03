@@ -1,0 +1,102 @@
+{
+  "source": "netease",
+  "id": "17605206877",
+  "title": "IJao22的2025年度歌单",
+  "creator": "IJao22",
+  "trackCount": 10,
+  "playCount": 8,
+  "coverUrl": "https://p1.music.126.net/zNdiECjTFkKoZIObqDqzWQ==/109951168870199828.jpg",
+  "canonicalUrl": "https://music.163.com/playlist?id=17605206877",
+  "tracks": [
+    {
+      "id": "1400259397",
+      "title": "有我呢",
+      "artist": "郭一凡",
+      "album": "重返地球",
+      "durationMs": 274568,
+      "coverUrl": "http://p2.music.126.net/zNdiECjTFkKoZIObqDqzWQ==/109951168870199828.jpg",
+      "trackId": "1400259397"
+    },
+    {
+      "id": "28387868",
+      "title": "天气先生",
+      "artist": "方大同",
+      "album": "危险世界",
+      "durationMs": 271583,
+      "coverUrl": "http://p2.music.126.net/3Y0A55OzEnqKNiH5ODA54A==/109951172683046522.jpg",
+      "trackId": "28387868"
+    },
+    {
+      "id": "81955",
+      "title": "Love Song(Live)",
+      "artist": "方大同",
+      "album": "15 香港演唱会(2011Live)",
+      "durationMs": 357373,
+      "coverUrl": "http://p2.music.126.net/gZx1pZ-vw41PIx3r2S4LPw==/109951170537129078.jpg",
+      "trackId": "81955"
+    },
+    {
+      "id": "2147796710",
+      "title": "From The Start",
+      "artist": "Laufey",
+      "album": "Bewitched: The Goddess Edition",
+      "durationMs": 169573,
+      "coverUrl": "http://p2.music.126.net/oDvzwoTdPnN2SntGd54UZg==/109951169514379180.jpg",
+      "trackId": "2147796710"
+    },
+    {
+      "id": "2116728806",
+      "title": "this is what winter feels like",
+      "artist": "JVKE",
+      "album": "this is what winter feels like",
+      "durationMs": 194782,
+      "coverUrl": "http://p2.music.126.net/Oq5J0qnTWjbrg8R969HnMw==/109951169253798961.jpg",
+      "trackId": "2116728806"
+    },
+    {
+      "id": "2716607702",
+      "title": "珠玉",
+      "artist": "初续印记",
+      "album": "珠玉-ai方大同",
+      "durationMs": 161935,
+      "coverUrl": "http://p2.music.126.net/TqX-Xpbn6jUikzD3jiMACA==/109951171324765579.jpg",
+      "trackId": "2716607702"
+    },
+    {
+      "id": "82461",
+      "title": "四人游",
+      "artist": "方大同, 薛凯琪",
+      "album": "爱爱爱",
+      "durationMs": 228293,
+      "coverUrl": "http://p2.music.126.net/2UjnKgcM1IXxYxhHEXVa4Q==/109951168870794250.jpg",
+      "trackId": "82461"
+    },
+    {
+      "id": "82187",
+      "title": "黑洞里",
+      "artist": "方大同",
+      "album": "橙月",
+      "durationMs": 213586,
+      "coverUrl": "http://p2.music.126.net/oOTHG5woHSA3qmUUhxCy1g==/109951168870419734.jpg",
+      "trackId": "82187"
+    },
+    {
+      "id": "516358164",
+      "title": "Mystery of Love",
+      "artist": "Sufjan Stevens",
+      "album": "Call Me By Your Name (Original Motion Picture Soundtrack)",
+      "durationMs": 248964,
+      "coverUrl": "http://p2.music.126.net/o0NJVjyHT3anDiYxpPXt5Q==/109951165980140346.jpg",
+      "trackId": "516358164"
+    },
+    {
+      "id": "67447",
+      "title": "信心花舍",
+      "artist": "陈奕迅",
+      "album": "Shall We Dance? Shall We Talk!",
+      "durationMs": 205007,
+      "coverUrl": "http://p2.music.126.net/jr5XGr69K4k_U1eBnL-JYw==/109951170241860133.jpg",
+      "trackId": "67447"
+    }
+  ]
+}

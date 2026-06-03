@@ -1,0 +1,102 @@
+{
+  "source": "netease",
+  "id": "13074870257",
+  "title": "IJao22的2024年度歌单",
+  "creator": "IJao22",
+  "trackCount": 10,
+  "playCount": 4,
+  "coverUrl": "https://p1.music.126.net/vHgX5LPws_TSNzjeTGt_sQ==/109951163087231653.jpg",
+  "canonicalUrl": "https://music.163.com/playlist?id=13074870257",
+  "tracks": [
+    {
+      "id": "524152311",
+      "title": "神探",
+      "artist": "丁世光",
+      "album": "神经志",
+      "durationMs": 275562,
+      "coverUrl": "http://p1.music.126.net/vHgX5LPws_TSNzjeTGt_sQ==/109951163087231653.jpg",
+      "trackId": "524152311"
+    },
+    {
+      "id": "150560",
+      "title": "讨厌红楼梦",
+      "artist": "陶喆",
+      "album": "黑色柳丁",
+      "durationMs": 242373,
+      "coverUrl": "http://p1.music.126.net/FLIHPqpkfUBimQZB370agQ==/109951169237251638.jpg",
+      "trackId": "150560"
+    },
+    {
+      "id": "209397",
+      "title": "太聪明",
+      "artist": "陈绮贞",
+      "album": "Groupies吉他手",
+      "durationMs": 263173,
+      "coverUrl": "http://p1.music.126.net/Mvv6oyi8XjVfAIk0Lg76aA==/109951165876268707.jpg",
+      "trackId": "209397"
+    },
+    {
+      "id": "25648006",
+      "title": "麦恩莉",
+      "artist": "方大同",
+      "album": "回到未来",
+      "durationMs": 288360,
+      "coverUrl": "http://p1.music.126.net/8I4zvpNSsj--wGNg-mE2kw==/109951168870428045.jpg",
+      "trackId": "25648006"
+    },
+    {
+      "id": "150651",
+      "title": "飞机场的10:30",
+      "artist": "陶喆",
+      "album": "David Tao",
+      "durationMs": 280773,
+      "coverUrl": "http://p1.music.126.net/vcyUJw7mfEzzMCgbJry31w==/109951169507121139.jpg",
+      "trackId": "150651"
+    },
+    {
+      "id": "150561",
+      "title": "蝴蝶",
+      "artist": "陶喆",
+      "album": "黑色柳丁",
+      "durationMs": 283200,
+      "coverUrl": "http://p1.music.126.net/FLIHPqpkfUBimQZB370agQ==/109951169237251638.jpg",
+      "trackId": "150561"
+    },
+    {
+      "id": "150633",
+      "title": "天天",
+      "artist": "陶喆",
+      "album": "I'm OK",
+      "durationMs": 255200,
+      "coverUrl": "http://p1.music.126.net/tMQXBMTy8pGjGggX1j0YNQ==/109951169389595068.jpg",
+      "trackId": "150633"
+    },
+    {
+      "id": "82366",
+      "title": "爱在",
+      "artist": "方大同",
+      "album": "未来",
+      "durationMs": 243733,
+      "coverUrl": "http://p1.music.126.net/8fTdTkzJUc4jEcoiV5JNtw==/109951168870789373.jpg",
+      "trackId": "82366"
+    },
+    {
+      "id": "2058139099",
+      "title": "One Of The Girls",
+      "artist": "The Weeknd, JENNIE, Lily-Rose Depp",
+      "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+      "durationMs": 244684,
+      "coverUrl": "http://p1.music.126.net/6aqy20VWVRtn1f2jBLPeKQ==/109951168694564986.jpg",
+      "trackId": "2058139099"
+    },
+    {
+      "id": "25648005",
+      "title": "关于爱的定义",
+      "artist": "方大同",
+      "album": "回到未来",
+      "durationMs": 239120,
+      "coverUrl": "http://p1.music.126.net/8I4zvpNSsj--wGNg-mE2kw==/109951168870428045.jpg",
+      "trackId": "25648005"
+    }
+  ]
+}

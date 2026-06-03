@@ -1,0 +1,102 @@
+{
+  "source": "netease",
+  "id": "8995691542",
+  "title": "IJao22的2023年度歌单",
+  "creator": "IJao22",
+  "trackCount": 10,
+  "playCount": 4,
+  "coverUrl": "https://p1.music.126.net/-UEqoOLy2P4dWzH3WrBlbA==/109951167164989067.jpg",
+  "canonicalUrl": "https://music.163.com/playlist?id=8995691542",
+  "tracks": [
+    {
+      "id": "28029112",
+      "title": "三人游",
+      "artist": "方大同",
+      "album": "The Soulboy Collection",
+      "durationMs": 237426,
+      "coverUrl": "http://p2.music.126.net/-UEqoOLy2P4dWzH3WrBlbA==/109951167164989067.jpg",
+      "trackId": "28029112"
+    },
+    {
+      "id": "1867247473",
+      "title": "Cuz' of",
+      "artist": "PO8",
+      "album": "蝴蝶的罪恶感",
+      "durationMs": 178285,
+      "coverUrl": "http://p2.music.126.net/2xE0GMiuCsJsd19DNr1jGQ==/109951166320295223.jpg",
+      "trackId": "1867247473"
+    },
+    {
+      "id": "1953333106",
+      "title": "青城山下",
+      "artist": "KKECHO, REDBOI",
+      "album": "青城山下",
+      "durationMs": 203389,
+      "coverUrl": "http://p2.music.126.net/_1e6B495tumrmK2XI_IM_w==/109951167511278692.jpg",
+      "trackId": "1953333106"
+    },
+    {
+      "id": "1318733599",
+      "title": "Sunflower",
+      "artist": "Post Malone, Swae Lee",
+      "album": "Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)",
+      "durationMs": 158040,
+      "coverUrl": "http://p2.music.126.net/NPeyzpUmXGAzsI6VUQxvrA==/109951171748635952.jpg",
+      "trackId": "1318733599"
+    },
+    {
+      "id": "108406",
+      "title": "加油！",
+      "artist": "林俊杰, MC HotDog 热狗",
+      "album": "100天",
+      "durationMs": 227640,
+      "coverUrl": "http://p2.music.126.net/sek4ONERhGbxp4oIKcGNMQ==/109951171415599135.jpg",
+      "trackId": "108406"
+    },
+    {
+      "id": "1896444915",
+      "title": "One Last Kiss × Slow Down (Mashup)",
+      "artist": "Jason的森风",
+      "album": "One Last Kiss × Slow Down (Mashup)",
+      "durationMs": 178877,
+      "coverUrl": "http://p2.music.126.net/VCb11izUSsD9eAO1iS_RYQ==/109951166638680368.jpg",
+      "trackId": "1896444915"
+    },
+    {
+      "id": "2057570350",
+      "title": "一个无所事事的下午",
+      "artist": "泥鳅zinco, 傲傲",
+      "album": "烂人生",
+      "durationMs": 179746,
+      "coverUrl": "http://p2.music.126.net/LGR609wnncNA-Mz6J4mjlw==/109951168691064201.jpg",
+      "trackId": "2057570350"
+    },
+    {
+      "id": "2030500715",
+      "title": "斗安珠",
+      "artist": "等一下就回家, REDBOI",
+      "album": "斗安珠",
+      "durationMs": 215872,
+      "coverUrl": "http://p2.music.126.net/aKtyEMxiECS8K-HU6V9aRg==/109951168488149496.jpg",
+      "trackId": "2030500715"
+    },
+    {
+      "id": "1444959593",
+      "title": "Time Flies",
+      "artist": "Drake",
+      "album": "Dark Lane Demo Tapes",
+      "durationMs": 192931,
+      "coverUrl": "http://p2.music.126.net/zEWK544BId-RUgB-bTPTTQ==/109951164953536920.jpg",
+      "trackId": "1444959593"
+    },
+    {
+      "id": "2052349052",
+      "title": "Self Love",
+      "artist": "Metro Boomin, Coi Leray",
+      "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)",
+      "durationMs": 189466,
+      "coverUrl": "http://p2.music.126.net/SxtseFx6E4yP4o_PlWLPhA==/109951168652317597.jpg",
+      "trackId": "2052349052"
+    }
+  ]
+}

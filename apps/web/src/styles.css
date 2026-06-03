@@ -696,6 +696,59 @@ button {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.cookie-guides {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.cookie-guide {
+  padding: 16px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cookie-guide strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cookie-guide ol {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.cookie-guide li + li {
+  margin-top: 4px;
+}
+
+.cookie-guide code {
+  color: var(--gold);
+  font-family: "SF Mono", "Consolas", monospace;
+  font-size: 12px;
+}
+
+.cookie-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.cookie-links a,
+.cookie-guide a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.cookie-links a:hover,
+.cookie-guide a:hover {
+  text-decoration: underline;
+}
+
 .weather-summary-card {
   padding: 16px 18px;
   border-radius: 20px;

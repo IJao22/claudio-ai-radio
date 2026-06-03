@@ -1755,6 +1755,60 @@ export default function App() {
             </label>
           </div>
 
+          <div className="cookie-guides">
+            <article className="cookie-guide">
+              <strong>网易云 Cookie 获取教程</strong>
+              <ol>
+                <li>
+                  先在当前浏览器登录网易云音乐，然后打开{" "}
+                  <a href="https://music.163.com/" target="_blank" rel="noreferrer">
+                    music.163.com
+                  </a>
+                  {" "}任意页面。
+                </li>
+                <li>按 <code>F12</code> 打开开发者工具。</li>
+                <li>进入 <code>Application</code> 面板。</li>
+                <li>在左侧找到 <code>Storage -&gt; Cookies -&gt; https://music.163.com</code>。</li>
+                <li>把需要的 Cookie 项复制出来，按 <code>name=value; name2=value2</code> 的格式拼成一整行。</li>
+                <li>把这一整行粘贴到上面的“网易云 Cookie”输入框，再点击“保存到本机”。</li>
+              </ol>
+              <div className="cookie-links">
+                <a href="https://developer.chrome.com/docs/devtools/application/cookies" target="_blank" rel="noreferrer">
+                  Chrome DevTools Cookie 文档
+                </a>
+                <a href="https://learn.microsoft.com/en-us/microsoft-edge/devtools/storage/cookies" target="_blank" rel="noreferrer">
+                  Edge DevTools Cookie 文档
+                </a>
+              </div>
+            </article>
+
+            <article className="cookie-guide">
+              <strong>QQ 音乐 Cookie 获取教程</strong>
+              <ol>
+                <li>
+                  先在当前浏览器登录 QQ 音乐，然后打开{" "}
+                  <a href="https://y.qq.com/" target="_blank" rel="noreferrer">
+                    y.qq.com
+                  </a>
+                  {" "}任意页面。
+                </li>
+                <li>按 <code>F12</code> 打开开发者工具。</li>
+                <li>进入 <code>Application</code> 面板。</li>
+                <li>在左侧找到 <code>Storage -&gt; Cookies -&gt; https://y.qq.com</code>。</li>
+                <li>把需要的 Cookie 项复制出来，按 <code>name=value; name2=value2</code> 的格式拼成一整行。</li>
+                <li>把这一整行粘贴到上面的“QQ 音乐 Cookie”输入框，再点击“保存到本机”。</li>
+              </ol>
+              <div className="cookie-links">
+                <a href="https://developer.chrome.com/docs/devtools/application/cookies" target="_blank" rel="noreferrer">
+                  Chrome DevTools Cookie 文档
+                </a>
+                <a href="https://learn.microsoft.com/en-us/microsoft-edge/devtools/storage/cookies" target="_blank" rel="noreferrer">
+                  Edge DevTools Cookie 文档
+                </a>
+              </div>
+            </article>
+          </div>
+
           <div className="inline-actions">
             <button className="ghost-button" onClick={() => void saveCredentials()} disabled={isSavingCredentials}>
               {isSavingCredentials ? "保存中..." : "保存到本机"}

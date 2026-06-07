@@ -1,8 +1,8 @@
 import type { TtsProviderKey, TtsRequest, TtsResult } from "@claudio/core";
-import { EdgeTtsProvider } from "./providers/edge.js";
-import { WebSpeechProvider } from "./providers/webspeech.js";
-import type { TtsProvider } from "./base.js";
-import { getEffectiveAppSettings } from "../app-settings.js";
+import { EdgeTtsProvider } from "./providers/edge.ts";
+import { WebSpeechProvider } from "./providers/webspeech.ts";
+import type { TtsProvider } from "./base.ts";
+import { getEffectiveAppSettings } from "../app-settings.ts";
 
 export class TtsManager {
   private providers: Record<string, TtsProvider>;

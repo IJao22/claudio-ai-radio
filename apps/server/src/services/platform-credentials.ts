@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { PlatformCredentialsRequest, PlatformCredentialsStatus } from "@claudio/core";
-import { getConfigDirPath } from "./storage-paths.js";
+import { getConfigDirPath } from "./storage-paths.ts";
 
 type StoredCredentials = {
   neteaseCookie?: string;
@@ -33,11 +33,19 @@ async function readCredentials(): Promise<StoredCredentials> {
   }
 }
 
+function readEnvCredentials(): StoredCredentials {
+  return {
+    neteaseCookie: process.env.NETEASE_COOKIE?.trim() || undefined,
+    qqCookie: process.env.QQ_COOKIE?.trim() || undefined
+  };
+}
+
 export async function getPlatformCredentials(): Promise<PlatformCredentials> {
   const credentials = await readCredentials();
+  const envCredentials = readEnvCredentials();
   return {
-    neteaseCookie: credentials.neteaseCookie?.trim() || undefined,
-    qqCookie: credentials.qqCookie?.trim() || undefined,
+    neteaseCookie: credentials.neteaseCookie?.trim() || envCredentials.neteaseCookie,
+    qqCookie: credentials.qqCookie?.trim() || envCredentials.qqCookie,
     updatedAt: credentials.updatedAt
   };
 }

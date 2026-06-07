@@ -1,5 +1,5 @@
 import type { LlmMode, LlmStatusResponse } from "@claudio/core";
-import { getEffectiveAppSettings } from "./app-settings.js";
+import { getEffectiveAppSettings } from "./app-settings.ts";
 
 export function getConfiguredLlmMode(): LlmMode {
   return getEffectiveAppSettings().llmMode;

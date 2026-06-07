@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { AppSettingsRequest, AppSettingsResponse, LlmMode } from "@claudio/core";
-import { getAppShellMode, getConfigDirPath, getDataRootPath } from "./storage-paths.js";
+import { getAppShellMode, getConfigDirPath, getDataRootPath } from "./storage-paths.ts";
 
 type StoredAppSettings = {
   llmMode?: LlmMode;
@@ -19,7 +19,7 @@ type StoredAppSettings = {
   updatedAt?: string;
 };
 
-type EffectiveAppSettings = {
+export type EffectiveAppSettings = {
   llmMode: LlmMode;
   llmFallbackToRule: boolean;
   openaiBaseUrl: string;

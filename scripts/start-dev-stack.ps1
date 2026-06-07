@@ -16,6 +16,29 @@ function Stop-ExistingProjectProcesses {
   }
 }
 
+function Stop-PortListeners {
+  param(
+    [Parameter(Mandatory = $true)]
+    [int[]]$Ports
+  )
+
+  foreach ($port in $Ports) {
+    $connections = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue
+    foreach ($connection in $connections) {
+      if ($connection.OwningProcess -eq $PID) {
+        continue
+      }
+
+      try {
+        $process = Get-Process -Id $connection.OwningProcess -ErrorAction Stop
+        Write-Host "Stopping process $($process.Id) using port $port ($($process.ProcessName))..."
+        Stop-Process -Id $process.Id -Force -ErrorAction Stop
+      } catch {
+      }
+    }
+  }
+}
+
 function Wait-ForPort {
   param(
     [Parameter(Mandatory = $true)]
@@ -63,6 +86,7 @@ function Start-LoggedProcess {
 }
 
 Stop-ExistingProjectProcesses
+Stop-PortListeners -Ports @(8787, 5173)
 
 Write-Host "Starting Claudio services..."
 Start-LoggedProcess -Name "server" -Command "npm run dev:server"

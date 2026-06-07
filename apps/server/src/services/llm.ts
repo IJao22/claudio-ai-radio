@@ -7,14 +7,14 @@ import type {
   ImportedPlaylist,
   RadioShow
 } from "@claudio/core";
-import { getEffectiveAppSettings } from "./app-settings.js";
-import { buildSuggestionSet, inferConversationIntent, routeConversation } from "./conversation-router.js";
-import { buildContextWindow } from "./context-assembler.js";
-import { getConfiguredLlmMode, shouldFallbackToRule } from "./llm-config.js";
-import { buildDirectedShowFromPlaylist } from "./radio-director.js";
-import { getStationStateSnapshot, rememberConversationTurn } from "./station-state.js";
-import { getUserCorpus } from "./user-corpus.js";
-import { getWeatherSummary } from "./weather.js";
+import { getEffectiveAppSettings } from "./app-settings.ts";
+import { buildSuggestionSet, inferConversationIntent, routeConversation } from "./conversation-router.ts";
+import { buildContextWindow } from "./context-assembler.ts";
+import { getConfiguredLlmMode, shouldFallbackToRule } from "./llm-config.ts";
+import { buildDirectedShowFromPlaylist } from "./radio-director.ts";
+import { getStationStateSnapshot, rememberConversationTurn } from "./station-state.ts";
+import { getUserCorpus } from "./user-corpus.ts";
+import { getWeatherSummary } from "./weather.ts";
 
 type LlmDecision = {
   show: RadioShow;
@@ -286,8 +286,9 @@ function buildShowPrompt(playlist: ImportedPlaylist, message: string, contextSum
 }
 
 async function callOllama(playlist: ImportedPlaylist, message: string): Promise<LlmDecision> {
-  const model = process.env.OLLAMA_MODEL ?? "qwen2.5:7b";
-  const baseUrl = process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434";
+  const settings = getEffectiveAppSettings();
+  const model = settings.ollamaModel;
+  const baseUrl = settings.ollamaBaseUrl;
   const prompt = [
     "You are programming an AI radio show.",
     "Return strict JSON only.",
@@ -321,9 +322,10 @@ async function callOllama(playlist: ImportedPlaylist, message: string): Promise<
 }
 
 async function callOpenAiCompatible(playlist: ImportedPlaylist, message: string): Promise<LlmDecision> {
-  const model = process.env.OPENAI_MODEL ?? "deepseek-chat";
-  const baseUrl = process.env.OPENAI_BASE_URL ?? "https://api.deepseek.com";
-  const apiKey = process.env.OPENAI_API_KEY;
+  const settings = getEffectiveAppSettings();
+  const model = settings.openaiModel;
+  const baseUrl = settings.openaiBaseUrl;
+  const apiKey = settings.openaiApiKey;
   if (!apiKey) {
     throw new Error("OPENAI_API_KEY is missing");
   }
@@ -373,8 +375,9 @@ async function callOpenAiCompatible(playlist: ImportedPlaylist, message: string)
 }
 
 async function callOllamaConversation(prompt: string) {
-  const model = process.env.OLLAMA_MODEL ?? "qwen2.5:7b";
-  const baseUrl = process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434";
+  const settings = getEffectiveAppSettings();
+  const model = settings.ollamaModel;
+  const baseUrl = settings.ollamaBaseUrl;
 
   const response = await fetch(`${baseUrl}/api/generate`, {
     method: "POST",
@@ -396,9 +399,10 @@ async function callOllamaConversation(prompt: string) {
 }
 
 async function callOpenAiCompatibleConversation(prompt: string) {
-  const model = process.env.OPENAI_MODEL ?? "deepseek-chat";
-  const baseUrl = process.env.OPENAI_BASE_URL ?? "https://api.deepseek.com";
-  const apiKey = process.env.OPENAI_API_KEY;
+  const settings = getEffectiveAppSettings();
+  const model = settings.openaiModel;
+  const baseUrl = settings.openaiBaseUrl;
+  const apiKey = settings.openaiApiKey;
   if (!apiKey) {
     throw new Error("OPENAI_API_KEY is missing");
   }

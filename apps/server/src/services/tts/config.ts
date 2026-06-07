@@ -1,5 +1,5 @@
 import type { TtsProviderKey } from "@claudio/core";
-import { getEffectiveAppSettings } from "../app-settings.js";
+import { getEffectiveAppSettings } from "../app-settings.ts";
 
 const implementedProviders = new Set<TtsProviderKey>([
   "edge",

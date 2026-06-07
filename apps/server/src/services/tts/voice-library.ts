@@ -7,7 +7,7 @@ import type {
   TtsVoiceSelectRequest,
   TtsVoiceUploadRequest
 } from "@claudio/core";
-import { getConfigDirPath, getDataRootPath, getRepoRootPath, getTtsVoicesDirPath } from "../storage-paths.js";
+import { getConfigDirPath, getDataRootPath, getRepoRootPath, getTtsVoicesDirPath } from "../storage-paths.ts";
 
 type StoredTtsVoice = {
   id: string;

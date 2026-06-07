@@ -5,9 +5,9 @@ import type {
   ImportedPlaylist,
   RadioShow
 } from "@claudio/core";
-import type { StationStateSummary } from "./station-state.js";
-import type { UserCorpus } from "./user-corpus.js";
-import { getCurrentDaypartPlan } from "./scheduler.js";
+import type { StationStateSummary } from "./station-state.ts";
+import type { UserCorpus } from "./user-corpus.ts";
+import { getCurrentDaypartPlan } from "./scheduler.ts";
 
 export type ContextWindowFragments = {
   systemPrompt: string;

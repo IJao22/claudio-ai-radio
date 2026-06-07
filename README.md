@@ -51,14 +51,44 @@ npm run build
 npm run start:prod
 ```
 
+Render-like local acceptance run:
+
+PowerShell:
+
+```powershell
+Copy-Item .env.example .env -Force
+npm ci
+npm run build
+$env:CLAUDIO_APP_SHELL="browser"
+$env:PORT="10000"
+$env:CLAUDIO_DATA_DIR="$PWD\\tmp\\render-data"
+$env:CORS_ORIGIN=""
+npm run start:prod
+```
+
+Then verify:
+
+- open `http://127.0.0.1:10000/`
+- `http://127.0.0.1:10000/health` returns `{"status":"ok","service":"claudio-server"}`
+- refresh any SPA route directly, for example `http://127.0.0.1:10000/settings` or another client route, and it should still fall back to `index.html`
+- `GET /api/app/settings` should show `appShell: "browser"` and the `dataRoot` you injected
+- `GET /api/llm/status` should reflect the production env defaults or your locally saved overrides
+
 Important environment variables:
 
 - `PORT`
 - `CLAUDIO_APP_SHELL=browser`
 - `CLAUDIO_DATA_DIR=/absolute/path/to/data-dir`
-- `OPENAI_API_KEY`
 - `LLM_MODE`
 - `TTS_PROVIDER`
+
+Optional but commonly needed:
+
+- `OPENAI_API_KEY`
+- `OPENAI_BASE_URL`
+- `OPENAI_MODEL`
+- `NETEASE_COOKIE`
+- `QQ_COOKIE`
 
 ## Render deployment
 
@@ -77,6 +107,8 @@ Required notes:
 
 - you must deploy from a Git repository
 - `OPENAI_API_KEY` must be filled in Render if you want DeepSeek / OpenAI-compatible mode
+- `NETEASE_COOKIE` and `QQ_COOKIE` are only needed if you expect server-side playlist import against logged-in provider state
+- server-generated TTS audio URLs will automatically use Render's runtime `RENDER_EXTERNAL_URL`; only set `CLAUDIO_PUBLIC_API_BASE` if you need to override that behavior on another platform or behind a custom proxy
 - on Render free instances, local files are ephemeral and can be reset on restart or redeploy
 - that means platform cookies, imported playlists, corpus edits, memory state, and uploaded voices are not guaranteed to persist online
 
@@ -87,8 +119,8 @@ This workspace is now pushed to GitHub and prepared for Render deployment.
 Remaining work:
 
 1. create the Render service from the GitHub repository
-2. fill cloud environment variables such as `OPENAI_API_KEY`
-3. verify production playback behavior with online credentials
+2. fill cloud secrets: `OPENAI_API_KEY`, and optionally `NETEASE_COOKIE` / `QQ_COOKIE`
+3. after first boot, verify `/health`, `/api/app/settings`, `/api/llm/status`, playlist import, and one TTS playback round-trip in the live URL
 
 ## Current scope
 

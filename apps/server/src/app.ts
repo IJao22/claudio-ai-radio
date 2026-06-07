@@ -17,34 +17,34 @@ import type {
   TtsVoiceSelectRequest,
   TtsVoiceUploadRequest
 } from "@claudio/core";
-import { getAppSettings, saveAppSettings } from "./services/app-settings.js";
-import { routeConversation } from "./services/conversation-router.js";
-import { buildContextWindow } from "./services/context-assembler.js";
-import { getLlmStatus } from "./services/llm-config.js";
-import { buildDirectedShowWithLlm, converseWithDj } from "./services/llm.js";
-import { MusicImporter } from "./services/music/importer.js";
-import { getStoredPlaylists } from "./services/music/library-store.js";
-import { getPlatformCredentialsStatus, savePlatformCredentials } from "./services/platform-credentials.js";
-import { radioSessionService } from "./services/radio-session.js";
-import { getCurrentDaypartPlan } from "./services/scheduler.js";
-import { rememberPlayEvent } from "./services/station-state.js";
-import { getStationStateSnapshot, getStationStateSummary } from "./services/station-state.js";
-import { TtsManager } from "./services/tts/manager.js";
+import { getAppSettings, saveAppSettings } from "./services/app-settings.ts";
+import { routeConversation } from "./services/conversation-router.ts";
+import { buildContextWindow } from "./services/context-assembler.ts";
+import { getLlmStatus } from "./services/llm-config.ts";
+import { buildDirectedShowWithLlm, converseWithDj } from "./services/llm.ts";
+import { MusicImporter } from "./services/music/importer.ts";
+import { getStoredPlaylists } from "./services/music/library-store.ts";
+import { getPlatformCredentialsStatus, savePlatformCredentials } from "./services/platform-credentials.ts";
+import { radioSessionService } from "./services/radio-session.ts";
+import { getCurrentDaypartPlan } from "./services/scheduler.ts";
+import { rememberPlayEvent } from "./services/station-state.ts";
+import { getStationStateSnapshot, getStationStateSummary } from "./services/station-state.ts";
+import { TtsManager } from "./services/tts/manager.ts";
 import {
   createTtsAudioReadStream,
   fileExists,
   getTtsAudioContentType,
   resolveTtsAudioFilePath
-} from "./services/tts/audio-cache.js";
+} from "./services/tts/audio-cache.ts";
 import {
   deleteTtsVoice,
   getTtsVoiceLibrary,
   selectTtsVoice,
   uploadTtsVoice
-} from "./services/tts/voice-library.js";
-import { getUserCorpus, saveUserCorpus } from "./services/user-corpus.js";
-import { getWeatherSummary } from "./services/weather.js";
-import { getRepoRootPath } from "./services/storage-paths.js";
+} from "./services/tts/voice-library.ts";
+import { getUserCorpus, saveUserCorpus } from "./services/user-corpus.ts";
+import { getWeatherSummary } from "./services/weather.ts";
+import { getRepoRootPath } from "./services/storage-paths.ts";
 
 function resolveCorsOrigin() {
   const raw = process.env.CORS_ORIGIN?.trim();

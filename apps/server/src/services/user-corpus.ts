@@ -1,8 +1,8 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { ImportedPlaylist } from "@claudio/core";
-import { getAllImportedPlaylists } from "./music/library-store.js";
-import { getCorpusDirPath } from "./storage-paths.js";
+import { getAllImportedPlaylists } from "./music/library-store.ts";
+import { getCorpusDirPath } from "./storage-paths.ts";
 
 type CorpusFileKey = "taste" | "routines" | "mood-rules";
 

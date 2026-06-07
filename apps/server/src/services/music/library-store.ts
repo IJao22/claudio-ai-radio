@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { ImportedPlaylist } from "@claudio/core";
-import { getImportsDirPath } from "../storage-paths.js";
+import { getImportsDirPath } from "../storage-paths.ts";
 
 type LibraryIndex = {
   updatedAt: string;

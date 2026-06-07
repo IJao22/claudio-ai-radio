@@ -1,7 +1,7 @@
 import type { ImportedPlaylist, RadioShow, Track } from "@claudio/core";
-import type { StationPreferences } from "./station-state.js";
-import { getCurrentDaypartPlan } from "./scheduler.js";
-import { getConfiguredTtsProvider } from "./tts/config.js";
+import type { StationPreferences } from "./station-state.ts";
+import { getCurrentDaypartPlan } from "./scheduler.ts";
+import { getConfiguredTtsProvider } from "./tts/config.ts";
 
 type EnergyMode = "calm" | "balanced" | "intense";
 type WeatherTone = "rain" | "sunny" | "cloudy" | "cold" | "hot" | "windy" | "neutral";

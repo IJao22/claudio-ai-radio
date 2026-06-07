@@ -29,5 +29,9 @@ services:
         value: deepseek-chat
       - key: OPENAI_API_KEY
         sync: false
+      - key: NETEASE_COOKIE
+        sync: false
+      - key: QQ_COOKIE
+        sync: false
       - key: LLM_FALLBACK_TO_RULE
         value: "true"

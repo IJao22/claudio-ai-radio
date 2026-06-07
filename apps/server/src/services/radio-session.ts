@@ -6,10 +6,10 @@ import type {
   RadioSyncRequest,
   TrackPlaybackStatus
 } from "@claudio/core";
-import { getAllImportedPlaylists, getImportedPlaylistByKey, getLatestImportedPlaylist } from "./music/library-store.js";
-import { playbackResolver } from "./playback-resolver.js";
-import { buildFallbackShow, buildShowFromPlaylist } from "./radio-director.js";
-import { getConfiguredTtsProvider } from "./tts/config.js";
+import { getAllImportedPlaylists, getImportedPlaylistByKey, getLatestImportedPlaylist } from "./music/library-store.ts";
+import { playbackResolver } from "./playback-resolver.ts";
+import { buildFallbackShow, buildShowFromPlaylist } from "./radio-director.ts";
+import { getConfiguredTtsProvider } from "./tts/config.ts";
 
 type PlaybackSnapshot = {
   currentTrackIndex: number;

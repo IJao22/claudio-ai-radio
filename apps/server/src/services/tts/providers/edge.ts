@@ -4,15 +4,15 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { homedir } from "node:os";
 import { join } from "node:path";
 import type { TtsRequest, TtsResult } from "@claudio/core";
-import type { TtsProvider } from "../base.js";
+import type { TtsProvider } from "../base.ts";
 import {
   buildTtsCacheKey,
   cleanupStaleTtsAudioCache,
   ensureTtsAudioCacheDir,
   fileExists,
   resolveTtsAudioFilePath
-} from "../audio-cache.js";
-import { getDataRootPath } from "../../storage-paths.js";
+} from "../audio-cache.ts";
+import { getDataRootPath } from "../../storage-paths.ts";
 
 const dataRoot = getDataRootPath();
 const runtimeRoot = join(dataRoot, "runtime", "edge-tts");
@@ -33,6 +33,11 @@ function getServerBaseUrl() {
   const configured = process.env.CLAUDIO_PUBLIC_API_BASE?.trim();
   if (configured) {
     return configured.replace(/\/+$/, "");
+  }
+
+  const renderExternalUrl = process.env.RENDER_EXTERNAL_URL?.trim();
+  if (renderExternalUrl) {
+    return renderExternalUrl.replace(/\/+$/, "");
   }
 
   const port = process.env.PORT?.trim() || "8787";

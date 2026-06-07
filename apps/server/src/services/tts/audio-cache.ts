@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { createReadStream } from "node:fs";
 import { access, mkdir, readdir, rm, stat } from "node:fs/promises";
 import { extname, join } from "node:path";
-import { getTtsAudioCacheDirPath } from "../storage-paths.js";
+import { getTtsAudioCacheDirPath } from "../storage-paths.ts";
 
 const cacheDir = getTtsAudioCacheDirPath();
 const cleanupIntervalMs = 6 * 60 * 60 * 1000;

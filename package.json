@@ -8,8 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "powershell -ExecutionPolicy Bypass -File ./scripts/start-dev-stack.ps1",
-    "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev:server\" \"npm run dev:web\"",
+    "start": "npm run dev",
+    "dev": "powershell -ExecutionPolicy Bypass -File ./scripts/start-dev-stack.ps1",
     "dev:web": "npm run dev -w @claudio/web",
     "dev:server": "npm run dev -w @claudio/server",
     "build:web": "npm run build -w @claudio/web",

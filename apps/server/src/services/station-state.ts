@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { ChatConversationIntent } from "@claudio/core";
-import { getStateDirPath } from "./storage-paths.js";
+import { getStateDirPath } from "./storage-paths.ts";
 
 type StoredConversationTurn = {
   at: string;

@@ -7,8 +7,8 @@ import type {
   MusicSource,
   TrackPlaybackStatus
 } from "@claudio/core";
-import { getAllImportedPlaylists } from "./music/library-store.js";
-import { getPlatformCredentials } from "./platform-credentials.js";
+import { getAllImportedPlaylists } from "./music/library-store.ts";
+import { getPlatformCredentials } from "./platform-credentials.ts";
 
 const READY_TTL_MS = 15 * 60 * 1000;
 const FAILURE_TTL_MS = 60 * 1000;

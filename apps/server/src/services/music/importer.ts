@@ -1,9 +1,9 @@
 import type { ImportedPlaylist, PlaylistImportInput, PlaylistImportSeed } from "@claudio/core";
-import { fetchNeteasePlaylist } from "./netease.js";
-import { getImportedPlaylistByKey, getStoredPlaylists, replaceStoredPlaylist, saveImportedPlaylist } from "./library-store.js";
-import { fetchQqPlaylist } from "./qq.js";
-import { parsePlaylistLinks } from "./link-parser.js";
-import { seedLinks } from "./seed-links.js";
+import { fetchNeteasePlaylist } from "./netease.ts";
+import { getImportedPlaylistByKey, getStoredPlaylists, replaceStoredPlaylist, saveImportedPlaylist } from "./library-store.ts";
+import { fetchQqPlaylist } from "./qq.ts";
+import { parsePlaylistLinks } from "./link-parser.ts";
+import { seedLinks } from "./seed-links.ts";
 
 export class MusicImporter {
   getSeed(): PlaylistImportSeed {

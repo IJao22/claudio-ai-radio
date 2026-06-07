@@ -1,5 +1,5 @@
 import type { TtsRequest, TtsResult } from "@claudio/core";
-import type { TtsProvider } from "../base.js";
+import type { TtsProvider } from "../base.ts";
 
 export class WebSpeechProvider implements TtsProvider {
   key = "webspeech" as const;
